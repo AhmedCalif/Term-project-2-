@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Users</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header-icon">📷</div>
+<h2 class="users-title">Users</h2>
+
+
+
+<div class="user-card">
+    <img src="profile1.jpeg" alt="John's profile" class="user-image" width="50" height="50">
+    <div class="user-info">
+      <strong>john123</strong>
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="johnPhoto" accept="image/*">
+      <input type="hidden" name="username" value="john123">
+      <button type="submit" class="user-action">Upload</button>
+    </form>
+  </div>
+
+  >
+  <div class="user-card">
+    <img src="profile.jpeg" alt="Sandra's profile" class="user-image" width="50" height="50">
+    <div class="user-info">
+      <strong>sandra123</strong>
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="sandraPhoto" accept="image/*">
+      <input type="hidden" name="username" value="sandra123">
+      <button type="submit" class="user-action">Upload</button>
+    </form>
+
+</body>
+</html>

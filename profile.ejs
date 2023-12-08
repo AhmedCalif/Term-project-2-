@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= user.username %>'s Profile</title>
+ 
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="<%= user.profilePicture %>" alt="<%= user.username %>'s profile picture" class="profile-picture">
+      <h1 class="username"><%= user.username %></h1>
+      <div class="profile-stats">
+        <span><%= user.posts %> posts</span>
+        <span><%= user.followers %> followers</span>
+        <span><%= user.following %> following</span>
+      </div>
+      <p class="profile-description"><%= user.description %></p>
+      <button class="edit-profile-btn">Edit Profile</button>
+    </div>
+    <div class="profile-photos">
+      <% user.photos.forEach(function(photo) { %>
+        <img src="<%= photo %>" alt="Photo" class="photo">
+      <% }); %>
+    </div>
+  </div>
+</body>
+</html>
